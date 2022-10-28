@@ -1318,7 +1318,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https://justpaste.it/3lx3b").text
+	r1=requests.get("https://github.com/shuvoabalove/Shuvo-py1").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
