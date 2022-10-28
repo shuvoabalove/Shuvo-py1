@@ -388,15 +388,15 @@ def follow(ses,coki):
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
 logo = ("""\033[132m
-  \033[1;32m   _____ _    _ _    ___      ______  
-  \033[1;32m  / ____| |     | | |  | \ \    / / __ \ 
-  \033[1;32m | (___  | |___| | |  | |\ \  / / |  | |
-  \033[1;32m  \___ \| |__  | |  | |  \ \/ /| |  | |
-  \033[1;32m  ____) | |      | | |__  | |  \  / | |__| |
-  \033[1;32m_____/ | |      |_|\____/    \/   \____/ 
+  \033[1;32m    _____ _   _ _____ _____ _____  _    _  ____  
+  \033[1;32m  / ____| \ | |_   _/ ____|  __ \| |  | |/ __ \ 
+  \033[1;32m | (___ |  \| | | || |  __| |  | | |__| | |  | |
+  \033[1;32m  \___ \| . ` | | || | |_ | |  | |  __  | |  | |
+  \033[1;32m  ____) | |\  |_| || |__| | |__| | |  | | |__| |
+  \033[1;32m |_____/|_| \_|_____\_____|_____/|_|  |_|\____/ 
   \033[1;32m══════════════════════════════════════════════════════════\33[m 
-          \033[1;32mOwner  :   MR. Shuvo\33[m 																	    
-         \033[1;32mGithub  :   shuvoabalove/Shuvo-py1	    			   						                    
+          \033[1;32mOwner  :   MR. SHUVO\33[m 																	    
+         \033[1;32mGithub  :   SHUVO-XD\33[m 	    			   						                    
         \033[1;32mFb Page  :   @Mr.SHUVO.VAU\33[m 											               
   \033[1;32m══════════════════════════════════════════════════════════\033[1;37m""")
 
@@ -1318,7 +1318,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https://github.com/shuvoabalove/Shuvo-py1").text
+	r1=requests.get("https://justpaste.it/u/Shuvo5").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
@@ -1338,13 +1338,13 @@ def Subscraption():
 		print("")
 		print(" Copy And Send Key To Admin")
 		print ("")
-		print (" Your Key :"75739938266588")
+		print (" Your Key : "+SHUVO+VAU+key1)
 		print ("")
 		name = input (" Your Name : ")
 		print ("")
-		input(" Press Enter To Send Key#8F00FF#0200FF")
+		input(" Press Enter To Send Key")
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+SHUVO+VAU+key1
-		os.system('am start https://wa.me/+8801707326011?text=' + tks)
+		os.system('am start https://wa.me/+8801324313100?text=' + tks)
 		Subscraption()        
 Subscraption()     
